@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <!--------------header------------>
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="img/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                   
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+        </nav>
+
+    <h1>Contact Us</h1>
+    </section>
+
+   <!----------------contact us content-------------------> 
+  <section class="location">
+
+    <iframe src="https://www.google.com/maps/d/embed?mid=1FwJRQ0CrLfmmpfAmaseX-XfgZXk" width="640" height="480"></iframe>
+     
+  </section>
+   
+   <section class="contact-us">
+       <div class="row">
+           <div class="contact-col">
+               <div>
+                <i class="fa fa-home"></i>
+                   <span>
+                     <h5>XYZ Road, ABC Building</h5>
+                     <p>Nagpur, Maharashtra- 440002</p>
+                   </span>
+               </div>
+               <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                  <h5>+1 0123456789</h5>
+                  <p>Monday to Saturday, 10AM to 6PM</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-envelope-o"></i>
+                <span>
+                  <h5>info@gmail.com</h5>
+                  <p>Email us your query</p>
+                </span>
+            </div>
+           </div>
+           <div class="contact-col">
+               <form action="form-handler.php" method="post">
+                   <input type="text" name="name" placeholder="Enter your name" required>
+                   <input type="email" name="email" placeholder="Enter your email" required>
+                   <input type="text" name="subject" placeholder="Enter your subject" required>
+                   <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                   <button type="submit" class="hero-btn red-btn">Send Message</button>
+                   
+
+               </form>
+           </div>
+       </div>
+   </section>
+
+
+
+   <!-----------footer---------------->
+
+   <section class="footer1">
+    <h4>About Us</h4>
+    <p>At the University of Eduford, being the difference is in our DNA – providing education with a purpose and carrying out research that helps to shape society. 
+
+        We are an international university with pioneering spirit and a global reputation for high-quality teaching and research. We are passionate about creating impact in everything we do.
+        
+        Eduford is a place where ability – not background – is valued.
+        
+        </p>
+    
+</section>
+
+
+<!-----------footer---------------->
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="img/play-store.png">
+                    <img src="img/app-store.png">
+                </div>
+            </div>
+
+            <div class="footer-col-2">
+                <img src="img/logo.png">
+                <p>Our Purpose is providing education and <br>carrying out research that helps to shape society. 
+                </p>
+            </div>
+
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+               <ul>
+                   <li>Coupons</li>
+                   <li>Blog Post</li>
+                   <li>Join Affiliate</li>
+               </ul>
+            </div>
+
+            <div class ="footer-col-4">
+                <h3>Follow Us</h3>
+               <ul>
+                   <li>Facebook</li>
+                   <li>Twitter</li>
+                   <li>Instagram</li>
+                   <li>YouTube </li>
+               </ul>
+            </div>
+
+        </div>
+        <hr>
+        <p class="Copyright">Copyright 2021 - Eduford</p>
+    </div>
+
+ 
+
+
+    <!------JavaScript for Toggle Menu ----->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }            
+    </script>
+</body>
+</html>

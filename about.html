@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+</head>
+<body>
+
+    <!--------------header------------>
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="img/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+        </nav>
+
+    <h1>About Us</h1>
+    </section>
+
+   <!----------------about us content-------------------> 
+
+  <section class="about-us">
+      <div class="row">
+          <div class="about-col">
+              <h1>We are the World's largest University</h1>
+               <li>  Our vision</li> 
+               <p> To be recognised across the world as a University that addresses the needs of society through innovative and interdisciplinary research; learning and teaching of the highest quality; and by sharing our knowledge with the world.</p>
+                   <li> Positioning statement</li>
+                    <p>At the University of Stirling our thinkers are bright, inquisitive and innovative.
+                    
+                    Everything we do, as an institution and as individuals, has purpose and impact. This shapes our culture, our personality and our mindset. It encourages us to challenge the status quo and push the norm. We have a constant desire to innovate and improve in order to benefit society and make a difference to the communities we serve.
+                    
+                    We use our thinking to improve everything. By connecting, innovating and transforming, we believe our thinking can change the world.</p>
+                   <li>Our mission</li>
+                   <p>Our contribution and approach are defined by:<br>
+                        
+                       <b> Developing</b> people and helping society through the pursuit and understanding of knowledge. We create the conditions for innovative, interdisciplinary research, and communicate what we have learned to the wider world in a clear and useful manner.<br>
+                        
+                       <b>Transforming </b>the lives of our students and staff by giving them opportunities to reach their full potential intellectually and emotionally; by making them resilient and giving them the skills they need for the modern world; and by instilling in them a sense of responsibility to promote public good.<br>
+                        
+                       <b> Creating</b> global citizens, working in partnership with governments, business and industry, the public and third sectors, and colleagues in other institutions, to identify and meet the changing needs of society.</p>
+
+                         <li> Our values</li>
+                          <p> <b> Excellence:</b> Leading the way globally in our areas of research expertise and through the delivery of an outstanding learning experience.<br> 
+                            
+                          <b> Openness:</b>  Being open in all we do, communicating the work and worth of the University to the wider world, and engaging people in the delivery of our vision.<br>
+                            
+                            <b> Ambition:</b> Growing the University in innovative ways, embedding sustainability, and making it a role model for the sector.</p>
+               <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+           </div>
+           <div class="about-col">
+               <img src="img/about.jpg">
+           </div>
+      </div>
+  </section>
+ 
+
+<!-----------footer---------------->
+
+<section class="footer1">
+    <h4>About Us</h4>
+    <p>At the University of Eduford, being the difference is in our DNA – providing education with a purpose and carrying out research that helps to shape society. 
+
+        We are an international university with pioneering spirit and a global reputation for high-quality teaching and research. We are passionate about creating impact in everything we do.
+        
+        Eduford is a place where ability – not background – is valued.
+        
+        </p>
+    
+</section>
+
+
+<!-----------footer---------------->
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="img/play-store.png">
+                    <img src="img/app-store.png">
+                </div>
+            </div>
+
+            <div class="footer-col-2">
+                <img src="img/logo.png">
+                <p>Our Purpose is providing education and <br>carrying out research that helps to shape society. 
+                </p>
+            </div>
+
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+               <ul>
+                   <li>Coupons</li>
+                   <li>Blog Post</li>
+                   <li>Join Affiliate</li>
+               </ul>
+            </div>
+
+            <div class ="footer-col-4">
+                <h3>Follow Us</h3>
+               <ul>
+                   <li>Facebook</li>
+                   <li>Twitter</li>
+                   <li>Instagram</li>
+                   <li>YouTube </li>
+               </ul>
+            </div>
+
+        </div>
+        <hr>
+        <p class="Copyright">Copyright 2021 - Eduford</p>
+    </div>
+
+
+    <!------JavaScript for Toggle Menu ----->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }            
+    </script>
+</body>
+</html>
